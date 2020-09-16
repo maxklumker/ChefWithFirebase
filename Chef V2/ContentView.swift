@@ -6,14 +6,36 @@
 //
 
 import SwiftUI
+import Firebase
+import SDWebImageSwiftUI
 
 struct ContentView: View {
+        
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-    }
-}
-
+            
+        TabView {
+        RecipeView().tabItem
+            {
+        Image(systemName: "rectangle.stack.fill")
+        Text("Home")
+                }
+            ExploreView().tabItem
+            {
+                Image(systemName: "suit.heart.fill")
+                Text("Explore")
+            }
+            
+//                SearchView().tabItem
+//                {
+//                    Image(systemName: "magnifyingglass")
+//                    Text("Search")
+//                }
+            
+              }
+           }
+        }
+     
+ 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
