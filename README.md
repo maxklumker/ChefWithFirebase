@@ -1,4 +1,4 @@
-# Chef - New cooking
+# Chef (withFirebase) - Cooking App
 
 ## Requirements
 In order to run the code on your computer you need a up-to-date version of Xcode installed. You can download it from the Mac Appstore.
